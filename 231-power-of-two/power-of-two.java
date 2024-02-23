@@ -12,6 +12,14 @@ class Solution {
         // }
         // return (n & (n-1)) == 0;
 
+        if(n<=0){
+            return false;
+        }
+        while(n%2==0){
+            n/=2;
+        }
+        return n==1;
+
         // if(n<=0){
         //     return false;
         // }
@@ -20,10 +28,11 @@ class Solution {
         // }
         // return n%2==0 && isPowerOfTwo(n/2);
 
-        if(n<=0){
-            return false;
-        }
+        // if(n<=0){
+        //     return false;
+        // }
+        // return Integer.bitCount(n)==1;
 
-        return Integer.bitCount(n)==1;
+
     }
 }
