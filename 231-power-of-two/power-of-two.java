@@ -4,21 +4,13 @@ class Solution {
         // while (i<n){
         //     i=i*2;
         // }
-
         // return i==n ? true:false;
-
-        // if(n<=0){
-        //     return false;
-        // }
-        // return (n & (n-1)) == 0;
 
         if(n<=0){
             return false;
         }
-        while(n%2==0){
-            n/=2;
-        }
-        return n==1;
+        return (n & (n-1)) == 0;
+
 
         // if(n<=0){
         //     return false;
@@ -32,6 +24,16 @@ class Solution {
         //     return false;
         // }
         // return Integer.bitCount(n)==1;
+
+        // if(n<=0){
+        //     return false;
+        // }
+        // while(n%2==0){
+        //     n/=2;
+        // }
+        // return n==1;
+
+
 
 
     }
