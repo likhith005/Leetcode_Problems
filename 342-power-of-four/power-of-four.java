@@ -32,7 +32,7 @@ class Solution {
             return false;
         }
         int x = (int) (Math.log(n)/Math.log(4));
-        return (Math.pow(4,x)==n) ? true: false;
+        return Math.pow(4,x)==n; // return (Math.pow(4,x)==n) ? true: false;
     }
 }
     
