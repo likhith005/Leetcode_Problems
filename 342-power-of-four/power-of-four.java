@@ -28,11 +28,20 @@ class Solution {
 
 
 
+        // if(n<=0){
+        //     return false;
+        // }
+        // int x = (int) (Math.log(n)/Math.log(4));
+        // return Math.pow(4,x)==n; // return (Math.pow(4,x)==n) ? true: false;
+
+
+
+
         if(n<=0){
             return false;
         }
-        int x = (int) (Math.log(n)/Math.log(4));
-        return Math.pow(4,x)==n; // return (Math.pow(4,x)==n) ? true: false;
+
+        return ((n&(n-1))==0 && ((n-1)%3)==0);
     }
 }
     
