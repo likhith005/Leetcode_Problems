@@ -7,7 +7,7 @@ class Solution {
             if (n >= maxPower) {
                 n -= maxPower;
                 if (n == 0) {
-                return true;
+                    return true;
                 }
             }
             maxPower /= 3;
